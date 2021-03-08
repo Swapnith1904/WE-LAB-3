@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      //push()
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      fruits.push("Kiwi");
+      console.log(fruits);
+
+      //pop()
+      var x = fruits.pop();
+      console.log(x + " is popped out");
+
+      //shift()
+      console.log(fruits.shift() + "-first element is removed");
+
+      //unshift()
+      console.log("Lemon is added and length is " + fruits.unshift("Lemon"));
+
+      //splice()
+      console.log(
+        "Lemon and kiwi are addded at 2 and these were removed " +
+          fruits.splice(2, 1, "Lemon", "Kiwi")
+      );
+    </script>
+  </body>
+</html>
